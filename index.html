@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriados Nacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Aluno(a): ________________________ -->
+    <main>
+        <h1>Feriados Nacionais</h1>
+
+        <div class="busca">
+            <label for="ano">Ano <input type="number" id="ano" placeholder="Ano" step="1"></label>
+            <button id="btnConsultar">Consultar</button>
+        </div>
+
+        <p id="mensagem" role="status" aria-live="polite"></p>
+        <p id="total" aria-live="polite"></p>
+
+        <!-- Desafio extra: mostrar aqui o próximo feriado -->
+        <div id="proximo" aria-live="polite"></div>
+        <p>Os feriados no fim de semana aparecem em amarelo.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Dia da semana</th>
+                    <th>Feriado</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaFeriados"></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

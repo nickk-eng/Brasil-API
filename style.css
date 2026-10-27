@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f2f4f8; color: #222; margin: 0; padding: 24px; }
+main { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+h1 { margin-top: 0; color: #1f4e79; }
+input, select, button { font-size: 16px; padding: 8px 10px; border: 1px solid #bbb; border-radius: 6px; }
+button { background: #1f4e79; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #163a5a; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+th, td { padding: 8px; border-bottom: 1px solid #ddd; text-align: left; }
+th { background: #e8eef5; }
+.erro { color: #b00020; font-weight: bold; }
+
+.busca { display: flex; gap: 8px; }
+/* TODO: crie a classe usada para destacar feriados no sabado ou domingo */
+.fim-de-semana { }
+
+.busca { align-items: flex-end; flex-wrap: wrap; }
+.busca label { display: flex; flex-direction: column; gap: 6px; font-weight: bold; }
+.fim-de-semana { background: #fff3cd; color: #654d00; }
+#proximo:not(:empty) { background: #e5f4ec; color: #155536; border-left: 4px solid #248655; padding: 16px; border-radius: 6px; line-height: 1.6; }
+#total { font-weight: bold; }
+button:disabled { opacity: .65; cursor: wait; }
+input:focus-visible, button:focus-visible { outline: 3px solid #248655; outline-offset: 3px; }
+@media (max-width: 600px) { body { padding: 12px; } main { padding: 16px; } th, td { padding: 10px 6px; } }
